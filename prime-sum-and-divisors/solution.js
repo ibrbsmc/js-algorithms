@@ -1,4 +1,4 @@
-// Finds the sum of prime numbers up to N.
+// Finds the prime sum up to N and its divisors.
 
 function sumPrimesUpTo(limit) {
   let sum = 0;
@@ -21,4 +21,20 @@ function sumPrimesUpTo(limit) {
   return sum;
 }
 
-console.log(sumPrimesUpTo(11));
+function findDivisors(number) {
+  const divisors = [];
+
+  for (let divisor = 1; divisor <= number; divisor++) {
+    if (number % divisor === 0) {
+      divisors.push(divisor);
+    }
+  }
+
+  return divisors;
+}
+
+const primeSum = sumPrimesUpTo(11);
+const divisors = findDivisors(primeSum);
+
+console.log(primeSum); // 28
+console.log(divisors); // [1, 2, 4, 7, 14, 28]
