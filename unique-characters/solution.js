@@ -17,3 +17,11 @@ function isUniqueCharacters(str) {
 
 console.log(isUniqueCharacters("hello")); // false
 console.log(isUniqueCharacters("world")); // true
+
+/*
+
+function hasUniqueCharacters(str) {
+  return new Set(str).size === str.length;
+}
+  
+*/
