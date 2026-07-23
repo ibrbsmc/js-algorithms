@@ -26,4 +26,4 @@ function validateUsr(username) {
   return false;
 }
 
-console.log(validateUsr("İbrahim"));
+console.log(validateUsr("u__hello_world123"));
